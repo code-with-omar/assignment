@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive 70/30 Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo"><img src="./images/logo.png" alt="" /></div>
+
+      <!-- hamburger for small screens -->
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="site-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="content">
+        <h1>Main Content</h1>
+
+        <p>Even more content for demonstration...</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+          magni, expedita deserunt iusto dolorum quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non dui
+          nec magna efficitur.
+        </p>
+        <p>Scrolling continues here...</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum
+          laborum quae iste?
+        </p>
+      </section>
+
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Extra links, ads, or whatever you like.</p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">© Md.Omar Faruk All rights reserved.</footer>
+
+    <script>
+      /* simple mobile nav toggle */
+      const btn = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".site-nav");
+      btn.addEventListener("click", () => nav.classList.toggle("open"));
+    </script>
+  </body>
+</html>

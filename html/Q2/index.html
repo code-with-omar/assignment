@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Positioning Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .box {
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        width: 200px;
+        margin-bottom: 30px;
+      }
+
+      .relative-box {
+        position: relative;
+        top: 20px;
+        left: 30px;
+        background-color: burlywood;
+      }
+
+      .absolute-wrapper {
+        position: relative;
+        height: 150px;
+        background-color: #0b63302f;
+        margin-bottom: 40px;
+        border: 1px dashed #d58888;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: tomato;
+        width: 200px;
+      }
+
+      .fixed-box {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Positioning Examples</h2>
+
+    <!-- Relative -->
+    <div class="box relative-box">
+      Relative Positioned Box (moved 20px down, 30px right)
+    </div>
+
+    <!-- Absolute inside relative wrapper -->
+    <div class="absolute-wrapper">
+      <div class="box absolute-box">
+        Absolute Positioned Box (relative to parent)
+      </div>
+      <p style="padding: 10px">
+        This is the parent with <code>position: relative</code>
+      </p>
+    </div>
+
+    <!-- Fixed -->
+    <div class="box fixed-box">Fixed Positioned Box (always bottom-right)</div>
+  </body>
+</html>
