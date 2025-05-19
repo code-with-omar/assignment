@@ -8,6 +8,8 @@
 
 - ### A footer with centered text.
 
+# Live: https://layout-six-pi.vercel.app/
+
 Html Codes:
 
 ```html
@@ -216,6 +218,8 @@ a {
 
 Example
 
+# Live : https://q2-beige.vercel.app/
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -298,6 +302,8 @@ z-index is a CSS property that controls which element appears on top when elemen
 - Higher z-index = in front
 
 - Lower z-index = behind
+
+# Live: https://z-index-sigma.vercel.app/
 
 ```html
 <!DOCTYPE html>
@@ -550,6 +556,8 @@ This mechanism ensures non-blocking behavior, enabling smooth UIs and responsive
 
 - Show user names in a styled list
 - Use useEffect and useState hooks
+
+# Live : https://user-name-eight.vercel.app/
 
 ```js
 import { useEffect, useState } from "react";
